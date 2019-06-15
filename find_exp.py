@@ -11,7 +11,7 @@ def take_sample(samples = samples_to_take, dist = split_dist):
     return sample
 
 
-def taxa_count(levels, distribution = sample):
+def taxa_count(levels, distribution):
     if levels == 1:
         return np.random.choice(distribution)
     else:
