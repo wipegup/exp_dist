@@ -24,12 +24,12 @@ num_sims = 1000
 simulations = []
 
 for s in to_sim.index:
-    info = to_sim.loc[s, :].to_dict
+    info = to_sim.loc[s, :].to_dict()
     leaves = info['leaves']
     levels = info ['levels']
     for i in range(num_sims):
         sample = take_sample()
-        to_add = info.copy
+        to_add = info.copy()
         accounted_for = 0
         splits = 0
         while accounted_for < leaves:
