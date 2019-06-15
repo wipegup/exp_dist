@@ -35,7 +35,7 @@ for s in to_sim.index:
         while accounted_for < leaves:
 
             splits += 1
-            accounted_for += taxa_counts(levels, sample)
+            accounted_for += taxa_count(levels, sample)
         to_add['sim_split'] = splits
         simulations.append(to_add)
 
